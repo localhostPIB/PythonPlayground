@@ -28,7 +28,7 @@ def user_input():
         except ValueError:
             print("Bitte Zahl von 1 bis 9 eingeben")
         else:
-            if spielzug >= 1 and spielzug <= 9:
+            if 1 <= spielzug <= 9:
                 if spielfeld[spielzug] == 'X' or spielfeld[spielzug] == 'O':
                     print("Das Feld ist bereits belegt - ein anderes wählen!")
                 else:
@@ -43,6 +43,7 @@ def player_change():
         spieler_aktuell = 'O'
     else:
         spieler_aktuell = 'X'
+
 
 def kontrolle_gewonnen():
     if spielfeld[1] == spielfeld[2] == spielfeld[3]:
