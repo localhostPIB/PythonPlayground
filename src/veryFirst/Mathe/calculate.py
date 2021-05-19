@@ -106,17 +106,25 @@ def kalender():
 
 
 def schleifensteuerung():
-
     for i in range(1, 6, 1):
         for j in range(1, 11, 1):
             for k in range(0, 10, 1):
                 if i + j + k == 10:
                     print("(" + str(i) + ", " + str(j) + ", " + str(k) + ")")
-                
 
     exit(0)
 
 
+def muster():
+    for i in range(1, 5, 1):
+        print(" ")
+        for y in range(0, i, 1):
+            print("*".format(y, y*y))
+    # todo
+    exit(0)
+
+
+muster()
 schleifensteuerung()
 kalender()
 schraubenTyp()
