@@ -119,11 +119,36 @@ def muster():
     for i in range(1, 5, 1):
         print(" ")
         for y in range(0, i, 1):
-            print("*".format(y, y*y))
+            print("*".format(y, y * y))
     # todo
     exit(0)
 
 
+def mittelwert(a, b, c):
+    return (a + b + c) / 3
+
+
+def anzTageFebruar(jahr):
+    if int(jahr) % 4 == 0 and int(jahr) % 100 != 0:
+        tage = 29
+    else:
+        tage = 28
+    return tage
+
+
+def sinus(a, b, x):
+    return a * math.sin(x + b)
+
+
+def exp(a, b, x):
+    return a * math.exp(-b * x)
+
+
+
+sinus(3, 3, 1)
+exp(3, 3, 1)
+anzTageFebruar(2009)
+mittelwert(3, 3, 3)
 muster()
 schleifensteuerung()
 kalender()
