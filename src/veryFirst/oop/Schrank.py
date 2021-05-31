@@ -1,5 +1,6 @@
 class Schrank:
-    __zaehler = 0
+    __zaehler = 0  # doppelt __ == private ; einfach _ protected unt ohne ist public
+    """ https://www.tutorialsteacher.com/python/public-private-protected-modifiers  """
 
     def __init__(self, name, b, h, preis, abmessungen):
         self.__name = name

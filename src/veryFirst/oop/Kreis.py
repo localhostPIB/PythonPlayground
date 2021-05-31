@@ -13,6 +13,7 @@ class Kreis:
         if r > 0:
             self.__radius = r
         Kreis.__anzahl = Kreis.__anzahl + 1
+        self.__anzahl += 1
 
     def __init__(self, farbe='Blau', r=1, x=1, z=1):
         self.__farbe = farbe
@@ -28,7 +29,8 @@ class Kreis:
 
     def __init__(self, farbe):
         self.__farbe = farbe
-
+        Kreis.__anzahl = Kreis.__anzahl + 1
+        self.__anzahl += self.__anzahl + 1
 
     # Berechnen der Kreisflaeche
     def getFlaeche(self):
