@@ -14,9 +14,14 @@ class Schrank:
         if abmessungen is None:
             abmessungen = [2, 5, 2]
         self.__name = name
-        self.__b = b
-        self.__h = h
-        self.__preis = preis
+
+        if b >= 0 and h >= 0 and preis >= 1:
+            self.__b = b
+            self.__h = h
+            self.__preis = preis
+        else:
+            raise ValueError("Eingabe fehlerhaft!!!")
+
         self.__abmessungen = abmessungen
         Schrank.__zaehler += 1
 

@@ -2,7 +2,6 @@ import math
 
 
 class Kreis:
-
     # Klassenvariable
     __anzahl = 0
 
@@ -30,12 +29,11 @@ class Kreis:
     def __init__(self, farbe):
         self.__farbe = farbe
         Kreis.__anzahl = Kreis.__anzahl + 1
-        self.__anzahl += self.__anzahl + 1
+        self.__anzahl = self.__anzahl + 1
 
     # Berechnen der Kreisflaeche
     def getFlaeche(self):
         return math.pi * self.__radius * self.__radius
-
 
     # Verschieben des Kreismittelpunktes
     def verschiebe(self, dx, dy):

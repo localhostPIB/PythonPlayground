@@ -12,6 +12,10 @@ def zins():
     exit(0)
 
 
+def addiereWithFunctionTypeAnnotations(a: int, b: int) -> int:
+    return a + b
+
+
 def dreieckflaeche():
     a = input("a : ")
     b = input("b : ")
@@ -142,7 +146,6 @@ def sinus(a, b, x):
 
 def exp(a, b, x):
     return a * math.exp(-b * x)
-
 
 
 sinus(3, 3, 1)

@@ -12,7 +12,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_Kreis(self):
         kreis = Kreis('Rot')
-        print(Kreis.__anzahl)
+        a = kreis.getAnzahl()
         self.assertEqual(kreis.getFarbe(), 'Rot')
 
     def test_Rechteck(self):
@@ -21,9 +21,9 @@ class MyTestCase(unittest.TestCase):
 
     def test_Schrank(self):
         abmessungen = [5, 2, 10]
-        schrank1 = Schrank("Ikea B", 4, 2, 1)
+        schrank1 = Schrank("Ikea B", 1, 2, 1)
         schrank2 = Schrank()
-        self.assertEqual(Schrank.getAnzahl(), 4)
+        self.assertEqual(Schrank.getAnzahl(), 2)
 
     def test_Auftrag(self):
         auftrag = Auftrag()
