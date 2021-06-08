@@ -7,7 +7,6 @@ class TotP:
     """
     https://pyauth.github.io/pyotp/#time-based-otps
     """
-
     def test(self):
         totp = pyotp.TOTP('base32secret3232')
         totp.now()
