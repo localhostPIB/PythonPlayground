@@ -4,3 +4,7 @@ SQLAlchemy~=1.4.15
 scapy~=2.4.5
 flask_bootstrap~=3.3.7.0
 pyotp~=2.6.0
+flask-mysql
+ZODB~=5.6.0
+mysql~=0.0.3
+persistent~=4.7.0
