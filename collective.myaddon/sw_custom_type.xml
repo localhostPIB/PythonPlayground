@@ -1,0 +1,19 @@
+<model
+    xmlns="http://namespaces.plone.org/supermodel/schema"
+    xmlns:security="http://namespaces.plone.org/supermodel/security"
+    xmlns:form="http://namespaces.plone.org/supermodel/form"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.myaddon">
+  <schema>
+    <field name="color" type="zope.schema.Choice">
+      <description/>
+      <title>Farbe</title>
+      <values>
+		<element key="green">Gr&#252;n</element>
+		<element key="blue">Blau</element>
+		<element key="orange">Orange</element>
+		<element key="rose">Rosa</element>
+      </values>
+    </field>
+  </schema>
+</model>
