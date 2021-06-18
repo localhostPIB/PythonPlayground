@@ -29,6 +29,9 @@ src/collective/myaddon/browser/configure.zcml
 src/collective/myaddon/browser/overrides/.gitkeep
 src/collective/myaddon/browser/static/.gitkeep
 src/collective/myaddon/browser/templates/test.pt
+src/collective/myaddon/content/__init__.py
+src/collective/myaddon/content/sw_custom_type.py
+src/collective/myaddon/content/sw_custom_type.xml
 src/collective/myaddon/locales/README.rst
 src/collective/myaddon/locales/__init__.py
 src/collective/myaddon/locales/collective.myaddon.pot
@@ -40,9 +43,13 @@ src/collective/myaddon/profiles/default/browserlayer.xml
 src/collective/myaddon/profiles/default/catalog.xml
 src/collective/myaddon/profiles/default/metadata.xml
 src/collective/myaddon/profiles/default/rolemap.xml
+src/collective/myaddon/profiles/default/types.xml
 src/collective/myaddon/profiles/default/registry/main.xml
+src/collective/myaddon/profiles/default/types/sw_custom_type.xml
 src/collective/myaddon/profiles/uninstall/browserlayer.xml
 src/collective/myaddon/tests/__init__.py
+src/collective/myaddon/tests/test_ct_sw_custom_type.py
 src/collective/myaddon/tests/test_robot.py
 src/collective/myaddon/tests/test_setup.py
+src/collective/myaddon/tests/robot/test_ct_sw_custom_type.robot
 src/collective/myaddon/tests/robot/test_example.robot
