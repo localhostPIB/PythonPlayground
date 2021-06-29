@@ -11,3 +11,5 @@ persistent~=4.7.0
 SharePlum~=0.5.1
 transaction~=3.0.1
 office365~=0.3.15
+requests~=2.25.1
+schedule~=1.1.0
