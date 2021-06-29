@@ -16,6 +16,14 @@ class SharepointAPI:
         self.__site.AddList('My new new new list', description='Great List created by Phyton',
                             template_id='Custom List')
 
+    def infoList(self):
+        #folder = self.__site.Folder('Freigegebene Dokumente')
+        #file = folder.get_file('conf.py')
+        file = self.__site.get_list_templates()
+        print(file)
+        return file
+
 
 test = SharepointAPI()
 test.login()
+test.infoList()
