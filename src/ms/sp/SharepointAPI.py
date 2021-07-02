@@ -1,15 +1,15 @@
-from shareplum import Site
-from shareplum import Office365
+from shareplum import Office365, Site
 from shareplum.site import Version
+from src.ms.sp import StringUtils
 
 
 class SharepointAPI:
     __site = None
 
     def login(self):
-        authcookie = Office365('', username='',
-                               password='').GetCookies()
-        self.__site = Site('', version=Version.v365,
+        authcookie = Office365(StringUtils.StringUtils.website, username=StringUtils.StringUtils.email,
+                               password=StringUtils.StringUtils.passwort).GetCookies()
+        self.__site = Site(StringUtils.StringUtils.websiteAPI, version=Version.v365,
                            authcookie=authcookie)
 
     def addList(self):
@@ -26,4 +26,4 @@ class SharepointAPI:
 
 test = SharepointAPI()
 test.login()
-test.infoList()
+#test.infoList()
