@@ -70,4 +70,4 @@ class APIPoint:
                     if self.__timeStamp < value:
                         self.__timeStamp = value
 
-        print("Anzahl an Dateien:", self.__count )
+        print("Anzahl an Dateien:", self.__count)
