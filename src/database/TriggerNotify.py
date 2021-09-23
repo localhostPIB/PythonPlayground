@@ -6,7 +6,7 @@ import select
 def dblisten():
     connection = psycopg2.connect(
             host="128.0.0.0",
-            database="BD",
+            database="DB",
             user="###",
             password="....")
 
@@ -15,7 +15,8 @@ def dblisten():
     cur.execute("LISTEN new_Id;")
     print("Starte")
     while True:
-        select.select([connection], [], [])
+        if (select.select([connection], [], [], 240) == ([], [], [])) and not subscription:
+           break
         connection.poll()
         connection.commit()
 
