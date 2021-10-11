@@ -6,7 +6,7 @@ execute procedure notify_id_trigger();
 
 create or replace function notify_id_trigger() 
 RETURNS trigger AS $$
-begin perform pg_notify('new_id'::text, new::text); 
+begin perform pg_notify('new_id'::text, new::text);  -- wichtig !!
 return new; 
 end; 
 $$ language plpgsql;
