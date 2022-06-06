@@ -4,7 +4,7 @@ from models.Person import Nutzer
 from models.Order import Order
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:OliverRoot@localhost/PythonTest"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:....@localhost/PythonTest"
 db = SQLAlchemy(app)
 
 
