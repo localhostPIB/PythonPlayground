@@ -12,9 +12,7 @@ test = []
 for _ in range(0, 17):
 	n = random.randint(1, 10)
 	randomlist.append(n)
-	#test.append(randomlist)
-	#randomlist = []
-	
+
 
 fig = go.Figure(go.Funnel(y = list, x = randomlist))
 
