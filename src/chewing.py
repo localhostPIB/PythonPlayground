@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 try:
     import schedule
 except ImportError:
@@ -9,7 +11,7 @@ except ImportError:
 import time
 
 try:
-    from playsound import playsound
+    from playsoundx import playsoundx
 except ImportError:
     from pip._internal import main as pip
     pip(['install', 'playsound==1.2.2'])
@@ -17,7 +19,10 @@ except ImportError:
 
 
 def play_sound():
-    playsound('https://cdn.freesound.org/previews/412/412068_5121236-lq.mp3')
+    try:
+        playsound('https://cdn.freesound.org/previews/412/412068_5121236-lq.mp3')
+    except Exception as e:
+        pass
 
 
 def start():
