@@ -11,7 +11,7 @@ except ImportError:
 import time
 
 try:
-    from playsoundx import playsoundx
+    from playsound import playsound
 except ImportError:
     from pip._internal import main as pip
     pip(['install', 'playsound==1.2.2'])
