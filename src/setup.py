@@ -53,7 +53,7 @@ def create_executable():
     print(f"Creating executable:")
     python_executable: Final[str] = get_os_path("python.exe" if os.name == "nt" else "python")
     # cmd: pyinstaller --noconsole --onefile --windowed tk_bloch.py
-    subprocess.check_call([python_executable, "-m", "PyInstaller", "--noconsole", "--onefile", "--windowed" ,"tk_bloch.py"])
+    subprocess.check_call([python_executable, "-m", "PyInstaller", "--noconsole", "--onefile", "--windowed", "--hidden-import=PIL._tkinter_finder" ,"tk_bloch.py"])
 
 
 if __name__ == "__main__":
